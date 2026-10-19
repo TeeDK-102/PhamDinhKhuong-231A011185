@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Catcher - Hứng Táo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo">🍎</div>
+            <div>
+                <h1>APPLE CATCHER</h1>
+                <p>Thử tài hứng táo của bạn!</p>
+            </div>
+        </header>
+
+        <main class="layout">
+            <section class="game-card">
+                <div class="stats">
+                    <div class="stat">
+                        <span>🏆 ĐIỂM</span>
+                        <strong id="score">0</strong>
+                    </div>
+                    <div class="stat">
+                        <span>❤️ MẠNG</span>
+                        <strong id="lives">3</strong>
+                    </div>
+                    <div class="stat">
+                        <span>⭐ KỶ LỤC</span>
+                        <strong id="best-score">0</strong>
+                    </div>
+                </div>
+
+                <div id="game-container">
+                    <div class="sun"></div>
+                    <div class="cloud cloud-one">☁️</div>
+                    <div class="cloud cloud-two">☁️</div>
+                    <div class="tree tree-one">🌳</div>
+                    <div class="tree tree-two">🌲</div>
+
+                    <div id="apple">🍎</div>
+                    <div id="basket"><span>🧺</span></div>
+
+                    <div id="message" class="overlay">
+                        <div class="modal">
+                            <div class="modal-icon">🍎</div>
+                            <h2 id="message-title">SẴN SÀNG CHƯA?</h2>
+                            <p id="message-text">
+                                Hứng táo thật nhanh và lập kỷ lục nhé!
+                            </p>
+                            <label for="player-name">Tên người chơi</label>
+                            <input id="player-name" type="text"
+                                   maxlength="16" placeholder="Nhập tên của bạn">
+                            <button id="start-btn">▶ BẮT ĐẦU CHƠI</button>
+                            <small>Dùng phím ← → để di chuyển giỏ</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-footer">
+                    <span>🎮 Điều khiển: ← →</span>
+                    <span>🍏 Hứng táo để tăng điểm</span>
+                </div>
+            </section>
+
+            <aside class="leaderboard">
+                <div class="leaderboard-title">
+                    <span>🏆</span>
+                    <div>
+                        <h2>BẢNG XẾP HẠNG</h2>
+                        <p>TOP 5 người chơi xuất sắc</p>
+                    </div>
+                </div>
+
+                <div id="leaderboard-list"></div>
+
+                <div class="tip">
+                    <span>💡</span>
+                    <p>Mẹo: Quan sát vị trí táo và di chuyển giỏ thật nhanh!</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            APPLE CATCHER · MINI GAME HTML, CSS & JAVASCRIPT
+        </footer>
+    </div>
+</body>
+</html>
